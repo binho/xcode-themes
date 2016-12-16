@@ -17,7 +17,7 @@ themes_dir = curr_dir + "/themes"
 print('Themes folder:\n%s\n' % (themes_dir))
 
 dest_dir = os.path.expandvars("$HOME/Library/Developer/Xcode/UserData/FontAndColorThemes")
-print('Destination folder:\n%s' % dest_dir)
+print('Destination folder:\n%s\n' % dest_dir)
 
 # Check and create themes folder if needed
 if not os.path.exists(dest_dir):
@@ -25,7 +25,7 @@ if not os.path.exists(dest_dir):
 	os.makedirs(dest_dir)
 
 if command == '--list':
-	print('\nFound themes: \n')
+	print('Found themes: \n')
 
 for theme_file in os.listdir(themes_dir):
 	if theme_file.endswith(".xccolortheme"):
